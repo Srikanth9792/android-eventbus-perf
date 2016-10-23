@@ -1,6 +1,6 @@
 # android-eventbus-perf
 
-### Description
+## Description
 
 A utility app demonstrating the difference in performance between Android's LocalBroadcastManager and GreenRobot's [EventBus](http://greenrobot.org/eventbus/).
 
