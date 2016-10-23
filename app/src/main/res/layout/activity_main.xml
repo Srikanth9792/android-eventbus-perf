@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.localbroadcast_eventbus.MainActivity">
+
+    <Button
+        android:id="@+id/button_localbroadcast_async"
+        android:layout_height="wrap_content"
+        android:text="Local Broadcast Async"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="204dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/results_localbroadcast_async"
+        tools:text="result here\naverage here"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/button_localbroadcast_async"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@+id/button_localbroadcast_async"
+        app:layout_constraintBottom_toBottomOf="@+id/button_localbroadcast_async"
+        android:lines="2"/>
+
+    <Button
+        android:text="EventBus Posting"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_eventbus_posting"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_localbroadcast_sync"
+        app:layout_constraintLeft_toLeftOf="@+id/button_localbroadcast_async"
+        app:layout_constraintRight_toRightOf="@+id/button_localbroadcast_async"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/results_eventbus_posting"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/button_eventbus_posting"
+        tools:text="result here\naverage here"
+        android:lines="2"
+        app:layout_constraintTop_toTopOf="@+id/button_eventbus_posting"
+        app:layout_constraintBottom_toBottomOf="@+id/button_eventbus_posting"/>
+
+    <Button
+        android:text="EventBus Main"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_eventbus_main"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_eventbus_posting"
+        app:layout_constraintLeft_toLeftOf="@+id/button_localbroadcast_async"
+        app:layout_constraintRight_toRightOf="@+id/button_localbroadcast_async"/>
+
+    <Button
+        android:text="EventBus Background"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_eventbus_background"
+        app:layout_constraintLeft_toLeftOf="@+id/button_localbroadcast_async"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_eventbus_main"
+        app:layout_constraintRight_toRightOf="@+id/button_localbroadcast_async"/>
+
+    <Button
+        android:text="EventBus Async"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_eventbus_async"
+        app:layout_constraintLeft_toLeftOf="@+id/button_localbroadcast_async"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/button_eventbus_background"
+        app:layout_constraintRight_toRightOf="@+id/button_localbroadcast_async"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:text="@string/instructions"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/results_eventbus_main"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/button_eventbus_main"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:text="result here\naverage here"
+        android:lines="2"
+        app:layout_constraintTop_toTopOf="@+id/button_eventbus_main"
+        app:layout_constraintBottom_toBottomOf="@+id/button_eventbus_main"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/results_eventbus_background"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/button_eventbus_background"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:text="result here\naverage here"
+        android:lines="2"
+        app:layout_constraintTop_toTopOf="@+id/button_eventbus_background"
+        app:layout_constraintBottom_toBottomOf="@+id/button_eventbus_background"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/results_eventbus_async"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/button_eventbus_async"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="result here\naverage here"
+        android:lines="2"
+        app:layout_constraintTop_toTopOf="@+id/button_eventbus_async"
+        app:layout_constraintBottom_toBottomOf="@+id/button_eventbus_async"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintVertical_bias="0.52"/>
+
+    <Button
+        android:text="Local Broadcast Sync"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_localbroadcast_sync"
+        app:layout_constraintTop_toBottomOf="@+id/button_localbroadcast_async"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/button_localbroadcast_async"
+        app:layout_constraintRight_toRightOf="@+id/button_localbroadcast_async"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/results_localbroadcast_sync"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/button_localbroadcast_sync"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:lines="2"
+        tools:text="result here\naverage here"
+        app:layout_constraintTop_toTopOf="@+id/button_localbroadcast_sync"
+        app:layout_constraintBottom_toBottomOf="@+id/button_localbroadcast_sync"/>
+</android.support.constraint.ConstraintLayout>

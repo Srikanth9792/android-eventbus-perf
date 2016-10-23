@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LocalBroadcast vs EventBus Perf</string>
+    <string name="elapsed">%1$.2fms\navg: %2$.2fms</string>
+    <string name="instructions">Each button sends 10k local broadcasts or EventBus events, as labeled.\n\n\"EventBus Posting\" is in practice the same as \"EventBus Main\" since the posting thread is the main thread. The option is added for completeness.</string>
+</resources>
